@@ -51,7 +51,7 @@ TextureImporter:
       213: 21300030
     second: Unity_MC_render_death_15
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,9 +68,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -79,9 +82,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -102,9 +105,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -491,9 +500,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Unity_MC_render_death_0: 21300000
+      Unity_MC_render_death_1: 21300002
+      Unity_MC_render_death_10: 21300020
+      Unity_MC_render_death_11: 21300022
+      Unity_MC_render_death_12: 21300024
+      Unity_MC_render_death_13: 21300026
+      Unity_MC_render_death_14: 21300028
+      Unity_MC_render_death_15: 21300030
+      Unity_MC_render_death_2: 21300004
+      Unity_MC_render_death_3: 21300006
+      Unity_MC_render_death_4: 21300008
+      Unity_MC_render_death_5: 21300010
+      Unity_MC_render_death_6: 21300012
+      Unity_MC_render_death_7: 21300014
+      Unity_MC_render_death_8: 21300016
+      Unity_MC_render_death_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

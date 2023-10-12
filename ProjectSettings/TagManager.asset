@@ -9,6 +9,7 @@ TagManager:
   - eni
   - dea
   - coin
+  - Grid
   layers:
   - Default
   - TransparentFX
