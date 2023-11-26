@@ -8,21 +8,19 @@ public class AIL : MonoBehaviour
 {
     public int ails;
     public Text ScriptTxt;
-    public int coins;
     // Start is called before the first frame update
     void Start()
     {
         ails = 0;
-        coins = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(ails>10)
+        if(ails>20)
         {
-            Debug.Log("ails");
-            ails = 0;
+            GameObject.Find("Player").GetComponent<player>().lv = 4;
+            GetComponent<AIL>().enabled = false;
         }
     }
 
@@ -31,12 +29,7 @@ public class AIL : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("ail"))
         {
             ails++;
-            if(ails < 1) { ScriptTxt.text = ""; }
-            else ScriptTxt.text = Convert.ToString(ails);
-        }
-        else if (collision.collider.gameObject.CompareTag("coin"))
-        {
-            coins++;
+            if (ails > 0) { ScriptTxt.text = Convert.ToString(ails); }
         }
     }
 }
