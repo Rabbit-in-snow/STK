@@ -16,11 +16,14 @@ namespace Platformer.Mechanics
     {
         public PatrolPath path;
         public AudioClip ouch;
+        public int hurtpower=1;
+        public int health=1;
 
         internal PatrolPath.Mover mover;
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
+        internal GameObject player;
         SpriteRenderer spriteRenderer;
 
         public Bounds Bounds => _collider.bounds;
@@ -31,19 +34,20 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            player = GameObject.Find("Player");
         }
 
         void OnCollisionEnter2D(Collision2D collision)
         {
             if(collision.collider.gameObject.CompareTag("Player"))
             {
-                if (GameObject.Find("Player").GetComponent<attack>().attacking == true)
+                if (player.GetComponent<player>().attacking == true)
                 {
-                    
+                    health--;
                 }
                 else
                 {
-                    GameObject.Find("Player").GetComponent<Health>().Decrement();
+                        StartCoroutine(player.GetComponent<player>().hurt(hurtpower));
                 }
             }
         }
@@ -54,6 +58,10 @@ namespace Platformer.Mechanics
             {
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
+            }
+            if (health<=0)
+            {
+                gameObject.SetActive(false);
             }
         }
 
