@@ -2,21 +2,23 @@ using Platformer.Mechanics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  // Silder class 사용하기 위해 추가합니다.
+using UnityEngine.UI;
 
 public class hp : MonoBehaviour
 {
-    GameObject obj;
-    private int temps;
+    private GameObject player;
+    private Slider healthslider;
     void Start()
     {
+        player = GameObject.Find("Player");
+        healthslider = GetComponent<Slider>();
 
     }
 
 
     void Update()
     {
-        temps = GameObject.Find("Player").GetComponent<Health>().currentHP;
-        GameObject.Find("slihp").GetComponent<Slider>().value = temps;
+        healthslider.value = player.GetComponent<player>().CurrentHealth;
+        healthslider.maxValue = player.GetComponent<player>().Maxhealth;
     }
 }
