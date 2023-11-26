@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: caab3f7fe012c754fbbac3f968414d57
+guid: 69c8f2d6a063bcf4fb04ef1101b633ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6511131971756745732
-    second: lv3-walk-left_0
+      213: 6516744308002084706
+    second: lv3-walk-right_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lv3-walk-left_0
+      name: lv3-walk-right_0
       rect:
         serializedVersion: 2
         x: 273
-        y: 172
+        y: 183
         width: 240
-        height: 484
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 404ef36e7003c5a50800000000000000
-      internalID: 6511131971756745732
+      spriteID: 2675382cb60207a50800000000000000
+      internalID: 6516744308002084706
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lv3-walk-left_0: 6511131971756745732
+      lv3-walk-right_0: 6516744308002084706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
