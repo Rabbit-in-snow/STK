@@ -16,7 +16,8 @@ public class player : MonoBehaviour
     public uint lvupxp;
     private float nohurttime = (float)0.02;
     public int attackpower = 1;
-    public int jumppower = 2;
+    private bool IsGround;
+    private int CurrentJumpFrame=0;
     [HideInInspector] public bool attacking;
     [HideInInspector] public bool IsHurt;
 
@@ -57,7 +58,6 @@ public class player : MonoBehaviour
             Maxhealth++;
             CurrentHealth++;
             Speed+=0.5f;
-            jumppower++;
         }
         else if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) & IsHurt == true && attacking == false)
         {
@@ -133,9 +133,24 @@ public class player : MonoBehaviour
             Moveing = new Vector2(0, 0);
             am.Play("idle" + lv);
         }
-        if (Input.GetKeyDown(KeyCode.Space)) //jump
+        if (Input.GetKeyDown(KeyCode.Space)&&IsGround==true) //jump
         {
-            Moveing += new Vector2(0, Speed+100f);
+<<<<<<< Updated upstream
+            Moveing += new Vector2(0, Speed);
+=======
+            
+            CurrentJumpFrame = 1;
+            transform.position = new Vector2(transform.position.x, transform.position.y + Speed / 18 / 60);
+        }
+        if (CurrentJumpFrame>0&&CurrentJumpFrame<=60&&IsGround==false)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + Speed / 18 / 60);
+            CurrentJumpFrame++;
+        }
+        else if (IsGround == true)
+        {
+            CurrentJumpFrame = 0;
+>>>>>>> Stashed changes
         }
 
         rb.MovePosition(new Vector2(transform.position.x, transform.position.y) + Speed * Time.deltaTime * Moveing.normalized);
@@ -147,5 +162,20 @@ public class player : MonoBehaviour
         CurrentHealth -= hurtpower;
         yield return new WaitForSeconds(nohurttime);
         IsHurt = false;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Grid"))
+        {
+            IsGround= true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Grid"))
+        {
+            IsGround= false;
+        }
     }
 }
