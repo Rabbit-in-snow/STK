@@ -16,7 +16,6 @@ public class player : MonoBehaviour
     public uint lvupxp;
     private float nohurttime = (float)0.02;
     public int attackpower = 1;
-    public int jumppower = 2;
     private bool IsGround;
     [HideInInspector] public bool attacking;
     [HideInInspector] public bool IsHurt;
@@ -58,55 +57,54 @@ public class player : MonoBehaviour
             Maxhealth++;
             CurrentHealth++;
             Speed+=0.5f;
-            jumppower++;
         }
-        else if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) & IsHurt == true && attacking == false)
+        else if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) & IsHurt == true && attacking == false)//hurt
         {
             am.Play("hurt" + lv);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)
+        else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)//right move
         {
             Moveing = new Vector2(1, 0);
             am.Play("walk" + lv);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == true)
+        else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == true)//right move and hurt
         {
             Moveing = new Vector2(1, 0);
             am.Play("walkhurt" + lv);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)
+        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)//right run
         {
             Moveing = new Vector2(2, 0);
             am.Play("run" + lv);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == true)
+        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == true)//right run and hurt
         {
             Moveing = new Vector2(2, 0);
             am.Play("runhurt" + lv);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)
+        else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)//left move
         {
             Moveing = new Vector2(-1, 0);
             am.Play("walk" + lv);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == true)
+        else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && IsHurt == true)//left move and hurt
         {
             Moveing = new Vector2(-1, 0);
             am.Play("walkhurt" + lv);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)
+        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == false && attacking == false)//left run
         {
             Moveing = new Vector2(-2, 0);
             am.Play("run" + lv);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == true)
+        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow) && IsHurt == true)//left run and hurt
         {
             Moveing = new Vector2(-2, 0);
             am.Play("runhurt" + lv);
         }
-        else if (Input.GetKey(KeyCode.RightArrow) && IsGround == truey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) & IsHurt == false && attacking == true)
+        else if (IsHurt == false && attacking == true)
         {
-            Moveing = Vector2.zero
+            Moveing = Vector2.zero;
             am.Play("attack" + lv);
         }
         else
