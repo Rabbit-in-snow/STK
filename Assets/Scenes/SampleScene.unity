@@ -192,6 +192,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2965281
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -352,6 +358,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &9226680
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -440,6 +452,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &11628176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11628179}
+  - component: {fileID: 11628178}
+  - component: {fileID: 11628177}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: dea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &11628177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11628176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9473387ae50744bf946308793bd64e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &11628178
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11628176}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 100, y: 10}
+  m_EdgeRadius: 0
+--- !u!4 &11628179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11628176}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.42, y: -18.401562, z: 0.1953125}
+  m_LocalScale: {x: -0.29398438, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 311588741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &18267461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
@@ -518,6 +621,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &18386444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -752,6 +861,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &77339827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -912,6 +1027,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &88564559
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1217,6 +1338,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &146538478
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1627,6 +1754,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &180357688
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1787,6 +1920,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &197176797
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1947,6 +2086,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &201979257
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2107,6 +2252,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &206146211
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2267,6 +2418,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &214624827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2427,6 +2584,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &250703419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2633,6 +2796,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &291078492
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2842,6 +3011,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &299366647
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2959,6 +3134,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 419576588}
+  - {fileID: 1090666648}
+  - {fileID: 11628179}
+  - {fileID: 2067073111}
   - {fileID: 480004327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3600,6 +3779,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &319499291
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3806,6 +3991,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &363149000
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3966,6 +4157,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &379505867
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4126,6 +4323,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &393322236
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4417,6 +4620,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &401821233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4619,6 +4828,97 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 405429028}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &419576585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419576588}
+  - component: {fileID: 419576587}
+  - component: {fileID: 419576586}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: dea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &419576586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419576585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9473387ae50744bf946308793bd64e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &419576587
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419576585}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 100, y: 10}
+  m_EdgeRadius: 0
+--- !u!4 &419576588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419576585}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.65, y: -7.541561, z: 0.1953125}
+  m_LocalScale: {x: -0.29398438, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 311588741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &421228356
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +5022,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &444914047
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4882,6 +5188,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &465705420
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5139,6 +5451,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &517930609
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5426,6 +5744,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &528988912
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5586,6 +5910,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &547595159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97749,7 +98079,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -97827,6 +98157,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &579784467
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97987,6 +98323,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &588945934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98147,6 +98489,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &603822616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98307,6 +98655,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &609106319
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98467,6 +98821,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &628321271
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98628,6 +98988,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &631861676
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98801,6 +99167,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &637277591
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99596,6 +99968,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &672778961
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99756,6 +100134,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &683408057
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99922,6 +100306,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &692721938
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100175,6 +100565,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &724874390
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100335,6 +100731,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &739615153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100802,6 +101204,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &867167378
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100962,6 +101370,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &872956348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101122,6 +101536,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &882221694
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101340,6 +101760,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &925272469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101500,6 +101926,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &927297951
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101741,6 +102173,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &960318255
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101937,6 +102375,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &991193372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102164,6 +102608,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1026927993
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102324,6 +102774,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1049569070
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102643,6 +103099,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089905441}
   m_CullTransparentMesh: 1
+--- !u!1 &1090666645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090666648}
+  - component: {fileID: 1090666647}
+  - component: {fileID: 1090666646}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: dea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1090666646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090666645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9473387ae50744bf946308793bd64e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1090666647
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090666645}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 100, y: 10}
+  m_EdgeRadius: 0
+--- !u!4 &1090666648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090666645}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.9, y: -12.8915615, z: 0.1953125}
+  m_LocalScale: {x: 0.8875, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 311588741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1092390831
 GameObject:
   m_ObjectHideFlags: 0
@@ -102715,6 +103262,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1092390834
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102875,6 +103428,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1123815373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103035,6 +103594,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1127488647
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103195,6 +103760,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1147364366
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103562,6 +104133,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1157197073
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103758,6 +104335,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1173642795
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103918,6 +104501,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1178278963
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104084,6 +104673,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1210251738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104343,6 +104938,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1223626519
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104503,6 +105104,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1268258768
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104663,6 +105270,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1281361411
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104823,6 +105436,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1283512460
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105023,6 +105642,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1348527612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105183,6 +105808,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1352191860
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105343,6 +105974,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1365664008
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105503,6 +106140,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1373108474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -246619,6 +247262,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1380974306
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -246779,6 +247428,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1385962052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -246939,6 +247594,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1396501278
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247099,6 +247760,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1406354568
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247290,6 +247957,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1453332219
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247450,6 +248123,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1454927946
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247610,6 +248289,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1464023014
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247770,6 +248455,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1490919487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247947,6 +248638,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1522287297
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -248168,6 +248865,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1551224671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -248328,6 +249031,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1576890583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -248705,6 +249414,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1619339506
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -248911,6 +249626,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1621368343
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249152,6 +249873,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1672795675
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249312,6 +250039,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1683227635
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249472,6 +250205,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1683499494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249632,6 +250371,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1694937271
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249792,6 +250537,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1704248133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -249952,6 +250703,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1716121978
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -250118,6 +250875,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1745148133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -250273,6 +251036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frameRate: 12
   tokens: []
+  nextFrameTime: 0
 --- !u!114 &1754240610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250456,6 +251220,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1757862673
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -250662,6 +251432,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1778898475
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -250822,6 +251598,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1780616707
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -252326,6 +253108,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1801252246
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -252486,6 +253274,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1813056410
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -252734,6 +253528,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1858660051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -252894,6 +253694,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1867093367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -253054,6 +253860,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1880066265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -253446,6 +254258,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1940093103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -253612,6 +254430,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1942988530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -253940,6 +254764,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1973609110
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254229,6 +255059,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &1999828292
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254389,6 +255225,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2002785394
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254549,6 +255391,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2022472441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254709,6 +255557,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2029886393
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254797,6 +255651,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2067073108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067073111}
+  - component: {fileID: 2067073110}
+  - component: {fileID: 2067073109}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: dea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2067073109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067073108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9473387ae50744bf946308793bd64e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &2067073110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067073108}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 100, y: 10}
+  m_EdgeRadius: 0
+--- !u!4 &2067073111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067073108}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.062233, y: -10.7, z: 0.1953125}
+  m_LocalScale: {x: -0.080845706, y: 2.7125, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 311588741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2068009057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254968,6 +255913,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2078720163
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255134,6 +256085,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2106291504
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255294,6 +256251,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2113659141
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255454,6 +256417,12 @@ MonoBehaviour:
   - {fileID: 21300012, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300014, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
   - {fileID: 21300016, guid: d7f3ba40c95624407a79329e1af8b953, type: 3}
+  sprites: []
+  _renderer: {fileID: 0}
+  tokenIndex: -1
+  controller: {fileID: 0}
+  frame: 0
+  collected: 0
 --- !u!58 &2139755702
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255607,7 +256576,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!212 &61170948545753113
 SpriteRenderer:
@@ -255890,7 +256859,6 @@ MonoBehaviour:
   xp: 0
   lvupxp: 30
   attackpower: 1
-  jumppower: 2
   attacking: 0
   IsHurt: 0
 --- !u!1660057539 &9223372036854775807
