@@ -12,11 +12,11 @@ public class hp : MonoBehaviour
     {
         player = GameObject.Find("Player");
         healthslider = GetComponent<Slider>();
-
+        UpdateHealthbar();
     }
 
 
-    void Update()
+    public void UpdateHealthbar()
     {
         healthslider.value = player.GetComponent<player>().CurrentHealth;
         healthslider.maxValue = player.GetComponent<player>().Maxhealth;

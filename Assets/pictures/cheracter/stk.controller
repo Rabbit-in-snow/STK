@@ -975,7 +975,7 @@ AnimatorState:
   m_PrefabAsset: {fileID: 0}
   m_Name: lvup
   m_Speed: 1
-  m_CycleOffset: 0
+  m_CycleOffset: 1
   m_Transitions:
   - {fileID: -8700861450723584420}
   - {fileID: -1736602490885515965}
@@ -994,4 +994,4 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_TimeParameter: Blend
