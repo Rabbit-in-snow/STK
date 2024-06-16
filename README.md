@@ -1,8 +1,4 @@
 # STK
-설토끼
+설(雪)토끼
 
-Unity version:2023.1.19f1
-
-## Status
-
-Fixing juping bug
+Unity version:6000.0.5f1
