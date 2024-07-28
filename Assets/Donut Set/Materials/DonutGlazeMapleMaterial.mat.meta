@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a6c08edcc0ecb4292b73e1092ba2a664
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282633
+  packageName: Donut Set
+  packageVersion: 1.0
+  assetPath: Assets/Donut Set/Materials/DonutGlazeMapleMaterial.mat
+  uploadId: 658283
