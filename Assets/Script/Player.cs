@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private Rigidbody rb;
     public float Speed = 5f;
     [SerializeField] private bool IsGround;
-    private float h=0;    private float v=0;    private float y = 0;
+    private float h=0;    private float v = 0;    private float y = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         if (IsGround == true && Input.GetKey(KeyCode.Space)) { y = 1;}
         else { y = 0; }
 
-        Moveing = 1000 * Speed * new Vector3(h, y * 5, v);
+        Moveing = 1000 * Speed * new Vector3(h, y * 3, v);
         rb.AddForce(Moveing * Time.deltaTime);
     }
     void OnCollisionEnter(Collision collision)
