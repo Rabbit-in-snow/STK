@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0090:'new(...)' 사용", Justification = "<보류 중>", Scope = "member", Target = "~M:Player.Update")]
+[assembly: SuppressMessage("Style", "IDE1006:명명 스타일", Justification = "<보류 중>", Scope = "member", Target = "~M:attack.attcks(System.Int32)")]
